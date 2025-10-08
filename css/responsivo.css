@@ -1,0 +1,81 @@
+
+/* ====== RESPONSIVIDADE ====== */
+
+/* Tablets
+@media (max-width: 1000px) {
+  .header-content {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}*/
+
+/* Smartphones */
+@media (max-width: 600px) {
+  .topo {
+    height: 180px;
+  }
+
+  .header-content {
+    justify-content: space-between;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .btn-menu-mobile {
+    display: block;
+  }
+
+  .logo img {
+    width: 80px;
+  }
+
+  .logo span {
+    display: none;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+    padding: 0 15px;
+  }
+
+  .sobre h1 {
+    font-size: 3rem;
+  }
+
+  .sobre h2 {
+    font-size: 1.6rem;
+  }
+
+  .areas h1 {
+    font-size: 3rem;
+  }
+
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .rodape {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .hero-text button,
+  .sobre button,
+  .card button,
+  .cta button {
+    width: 100%;
+    max-width: 280px;
+  }
+}
