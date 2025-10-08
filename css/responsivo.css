@@ -22,7 +22,7 @@
 /* Smartphones */
 @media (max-width: 600px) {
   .topo {
-    height: 180px;
+    padding: 2px 0;
   }
 
   .header-content {
@@ -37,8 +37,16 @@
     display: block;
   }
 
+  .btn-menu-mobile i {
+    font-size: 2rem;
+  }
+
+  #sobre {
+    scroll-margin-top: 80px;
+  }
+
   .logo img {
-    width: 80px;
+    width: 50px;
   }
 
   .logo span {
@@ -46,20 +54,32 @@
   }
 
   .hero-text h1 {
-    font-size: 2rem;
-    padding: 0 15px;
+    font-size: 1.8rem;
+    padding: 50px 30px;
   }
 
   .sobre h1 {
-    font-size: 3rem;
+    font-size: 2.2rem;
   }
 
   .sobre h2 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
+  }
+
+  .sobre p {
+    font-size: 1.2rem;
   }
 
   .areas h1 {
-    font-size: 3rem;
+    font-size: 2.2rem;
+  }
+
+  .cta h2 {
+    font-size: 2.2rem;
+  }
+
+  .cta p {
+    font-size: 1.2rem;
   }
 
   .grid-3 {
@@ -77,5 +97,22 @@
   .cta button {
     width: 100%;
     max-width: 280px;
+  }
+
+  header [data-aos],
+  footer [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  [data-aos="fade-right"] {
+    transform: translateY(30px) !important; /* vira tipo fade-up */
+    opacity: 0;
+  }
+
+  [data-aos="fade-left"] {
+    transform: translateY(30px) !important;
+    opacity: 0;
   }
 }

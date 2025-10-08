@@ -4,18 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- SEO -->
+    <meta name="description" content="Margalho Advocacia - Experiência com qualidade, compromisso, respeito e transparência.">
+
+    <!-- SMO -->
+    <meta property="og:title" content="Margalho Advocacia - Experiência com qualidade, compromisso, respeito e transparência.">
+    <meta property="og:site_name" content="Margalho Advocacia">
+    <meta property="og:description" content="Nosso principal objetivo é proporcionar orientação clara e precisa, com transparência e eficiência, garantindo a defesa dos seus direitos.">
+    <meta property="og:url" content="https://margalhoadv.vercel.app/">
+    <meta property="og:image" content="https://margalhoadv.vercel.app/images/logo.png">
+    <meta property="og:image:type" content="image/png">
+
     <title>Margalho Advocacia</title>
 
+    <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" 
     rel="stylesheet">
 
+    <!-- Bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
+    <!-- AOS Animate -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/responsivo.css" />
 
+    <!-- Icon do site -->
     <link rel="icon" type="image/x-icon" href="images/logo.png">
 
   </head>
@@ -23,20 +41,20 @@
     <!-- HEADER -->
     <header class="topo">
       <div class="container header-content">
-        <div class="logo">
+        <div class="logo" data-aos="fade-right" data-aos-delay="300">
           <img src="images/logo.png" alt="Logo"/>
           <span>Margalho Advocacia</span>
         </div>
         <nav>
-          <ul class="menu">
+          <ul class="menu" data-aos="fade-left" data-aos-delay="300">
             <li><a href="#inicio">Início</a></li>
             <li><a href="#sobre">Sobre</a></li>
             <li><a href="#areas">Áreas de Atuação</a></li>
-            <li><a href="#contato">Contato</a></li>
+            <li><a href="https://wa.me/5591992922233?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações." target="_blank">Contato</a></li>
           </ul>
         </nav>
 
-        <div class="btn-menu-mobile" id="btn-menu-mobile">
+        <div class="btn-menu-mobile" id="btn-menu-mobile" data-aos="fade-left" data-aos-delay="300">
           <i class="bi bi-list"></i>
         </div>
 
@@ -46,7 +64,7 @@
             <li><a href="#inicio">Início</a></li>
             <li><a href="#sobre">Sobre</a></li>
             <li><a href="#areas">Áreas de Atuação</a></li>
-            <li><a href="#contato">Contato</a></li>
+            <li><a href="https://wa.me/5591992922233?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações." target="_blank">Contato</a></li>
           </ul>
         </nav>
       </div>
@@ -56,41 +74,45 @@
     <section class="hero" id="inicio">
       <div class="overlay"></div>
       <div class="hero-text">
-        <h1>
+        <h1 data-aos="zoom-in" data-aos-delay="300">
           Experiência com qualidade, compromisso, respeito e transparência.
         </h1>
-        <button>Falar com Advogado(a)</button>
+        <a style="text-decoration: none;" href="https://wa.me/5591992922233?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações." target="_blank">
+          <button data-aos="zoom-in" data-aos-delay="400">Falar com Advogado(a)</button>
+        </a>
       </div>
     </section>
 
     <!-- SOBRE -->
     <section class="sobre container" id="sobre">
-      <h1>Sobre</h1>
+      <h1 data-aos="zoom-in" data-aos-delay="500">Sobre</h1>
       <div class="texto">
-        <h2>
-          Há mais de 20 anos no mercado com atuação em todo o estado do Pará,
+        <h2 data-aos="fade-right" data-aos-delay="500">
+          Atuamos em todo o estado do Pará,
           Amapá, São Paulo e on-line em todo o Brasil
         </h2>
-        <p>
+        <p data-aos="fade-right" data-aos-delay="300">
           Atendemos questões ligadas tanto às preocupações nas áreas
           previdenciária, civil, trabalhista, do consumidor, imobiliária e
           autista. Temos compromisso com a ética e seriedade, buscando sempre os
           melhores resultados para nossos clientes.
         </p>
-        <p>
+        <p data-aos="fade-right" data-aos-delay="300">
           Nosso principal objetivo é proporcionar orientação clara e precisa,
           com transparência e eficiência, garantindo a defesa dos seus direitos.
         </p>
       </div>
-      <button>Falar com Advogado(a)</button>
+        <a style="text-decoration: none;" href="https://wa.me/5591992922233?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações." target="_blank">
+          <button data-aos="fade-right" data-aos-delay="400">Falar com Advogado(a)</button>
+        </a>
     </section>
 
     <!-- ÁREAS DE ATUAÇÃO -->
     <section class="areas" id="areas">
       <div class="container">
-        <h1>Áreas de Atuação</h1>
+        <h1 data-aos="zoom-in" data-aos-delay="300">Áreas de Atuação</h1>
         <div class="grid-3">
-          <div class="card">
+          <div class="card" data-aos="fade-right" data-aos-delay="500">
             <img
               src="images/direito-previdenciario.webp"
               alt="Direito Previdenciário"
@@ -101,20 +123,24 @@
               auxílios e revisões, assegurando o melhor resultado para sua vida
               financeira.
             </p>
-            <button>Falar com Advogado(a)</button>
+            <a style="text-decoration: none;" href="https://wa.me/5591992922233?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações%20sobre%20Direito%20Previdenciário." target="_blank">
+              <button>Falar com Advogado(a)</button>
+            </a>
           </div>
 
-          <div class="card">
+          <div class="card" data-aos="fade-up" data-aos-delay="500">
             <img src="images/direito-civil.png" alt="Direito Civil" />
             <h3>Direito Civil</h3>
             <p>
               Consultoria e assessoria na resolução de problemas jurídicos
               civis, contratos, indenizações e obrigações legais.
             </p>
-            <button>Falar com Advogado(a)</button>
+            <a style="text-decoration: none;" href="https://wa.me/5591992922233?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações%20sobre%20Direito%20Civil." target="_blank">
+              <button>Falar com Advogado(a)</button>
+            </a>
           </div>
 
-          <div class="card">
+          <div class="card" data-aos="fade-left" data-aos-delay="500">
             <img
               src="images/direito-trabalhista.jpeg"
               alt="Direito Trabalhista"
@@ -124,10 +150,12 @@
               Defesa dos direitos dos trabalhadores e empregadores, atuando em
               reclamatórias trabalhistas e negociações sindicais.
             </p>
-            <button>Falar com Advogado(a)</button>
+            <a style="text-decoration: none;" href="https://wa.me/5591992922233?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações%20sobre%20Direito%20Trabalhista." target="_blank">
+              <button>Falar com Advogado(a)</button>
+            </a>
           </div>
 
-          <div class="card">
+          <div class="card" data-aos="fade-right" data-aos-delay="500">
             <img
               src="images/direito-consumidor.webp"
               alt="Direito do Consumidor"
@@ -137,20 +165,24 @@
               Protegemos os consumidores contra abusos praticados por
               fornecedores de produtos e serviços.
             </p>
-            <button>Falar com Advogado(a)</button>
+            <a style="text-decoration: none;" href="https://wa.me/5591992922233?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações%20sobre%20Direito%20do%20Consumidor." target="_blank">
+              <button>Falar com Advogado(a)</button>
+            </a>
           </div>
 
-          <div class="card">
+          <div class="card" data-aos="fade-up" data-aos-delay="500">
             <img src="images/direito-autistas.png" alt="Direito dos Autistas" />
             <h3>Direito dos Autistas</h3>
             <p>
               Atuação voltada para garantir direitos de pessoas autistas e suas
               famílias, assegurando benefícios e qualidade de vida.
             </p>
-            <button>Falar com Advogado(a)</button>
+            <a style="text-decoration: none;" href="https://wa.me/5591992922233?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações%20sobre%20Direito%20dos%20Autistas." target="_blank">
+              <button>Falar com Advogado(a)</button>
+            </a>
           </div>
 
-          <div class="card">
+          <div class="card" data-aos="fade-left" data-aos-delay="500">
             <img
               src="images/direito-imobiliario.png"
               alt="Direito Imobiliário"
@@ -160,7 +192,9 @@
               Atuamos em questões de transações imobiliárias, regularização de
               imóveis e contratos de compra e venda.
             </p>
-            <button>Falar com Advogado(a)</button>
+            <a style="text-decoration: none;" href="https://wa.me/5591992922233?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações%20sobre%20Direito%20Imobiliário." target="_blank">
+              <button>Falar com Advogado(a)</button>
+            </a>
           </div>
         </div>
       </div>
@@ -168,36 +202,38 @@
 
     <!-- CTA -->
     <section class="cta">
-      <h2>Precisando de ajuda jurídica?</h2>
-      <p>
+      <h2 data-aos="zoom-in" data-aos-delay="500">Precisando de ajuda jurídica?</h2>
+      <p data-aos="zoom-in" data-aos-delay="500">
         Estamos prontos para resolver os mais diversos conflitos nas áreas do
         direito trabalhista, previdenciário e do consumidor.
       </p>
-      <button>Falar com Advogado(a)</button>
+      <a style="text-decoration: none;" href="https://wa.me/5591992922233?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações." target="_blank">
+        <button data-aos="zoom-in" data-aos-delay="500">Falar com Advogado(a)</button>
+      </a>
     </section>
 
     <!-- RODAPÉ -->
     <footer>
       <div class="rodape container">
-        <div class="col">
+        <div class="col" data-aos="fade-right" data-aos-delay="500">
           <h3>Margalho Advocacia</h3>
           <p>
             Advogado especializado em direito previdenciário, civil,
             trabalhista, do consumidor e imobiliário.
           </p>
         </div>
-        <div class="col">
+        <div class="col" data-aos="fade-up" data-aos-delay="500">
           <h3>Navegue</h3>
           <ul>
             <li><a href="#" id="#inicio">Início</a></li>
             <li><a href="#" id="escritorio">Sobre</a></li>
             <li><a href="#" id="#areas">Áreas de Atuação</a></li>
-            <li><a href="#" id="#contato">Contato</a></li>
+            <li><a href="https://wa.me/5591992922233?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações." target="_blank" id="#contato">Contato</a></li>
           </ul>
         </div>
-        <div class="col">
+        <div class="col" data-aos="fade-left" data-aos-delay="500">
           <h3>Informações</h3>
-          <p>Telefone: (91) 99999-9999</p>
+          <p>Telefone: (91) 99292-2233</p>
           <p>Email: teste@teste.com</p>
           <p>
             Endereço: Av. Augusto Montenegro, Residencial Verano, Belém - PA
@@ -205,12 +241,29 @@
         </div>
       </div>
       <div class="copy">
-        Copyright © 2025 - Margalho Advocacia.<br />Desenvolvido por
-        <span>Regi Lima.</span>
+        Copyright © 2025 - Margalho Advocacia.<br />Desenvolvido por <span>Regi Lima.</span>
       </div>
     </footer>
 
     <script src="js/menu-scroll.js"></script>
     <script src="js/menu-mobile.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 500,       // duração da animação em ms
+        once: true,          // anima só uma vez (melhor no mobile)
+        offset: 80,          // reduz a distância para ativar (padrão é 120)
+    });
+
+    // Garante que o AOS calcule novamente quando mudar de tamanho
+    window.addEventListener('resize', () => {
+      AOS.refresh();
+    });
+
+    // Atualiza ao terminar o carregamento (corrige bug do mobile)
+    window.addEventListener('load', () => {
+      AOS.refresh();
+    });
+    </script>
   </body>
 </html>
