@@ -1,5 +1,4 @@
 
-
 const btnAbrirMenuMobile = document.querySelector('#btn-menu-mobile'); 
 const menuMobile = document.querySelector('#menu-mobile');
 const body = document.body;
@@ -32,3 +31,11 @@ if (btnFechar) {
         body.classList.remove('no-scroll');
     });
 }
+
+// ----------- EXTRA: fechar ao clicar fora do menu -----------
+document.addEventListener('click', (event) => {
+    if (!menuMobile.contains(event.target) && !btnAbrirMenuMobile.contains(event.target)) {
+        menuMobile.classList.remove('abrir-menu');
+        body.classList.remove('no-scroll');
+    }
+});

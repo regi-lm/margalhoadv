@@ -19,6 +19,77 @@
   }
 }*/
 
+/* Quando o celular estiver em landscape (deitado) */
+@media screen and (max-width: 1000px) and (orientation: landscape) {
+  .menu {
+    font-size: 15px;
+  }
+
+  /* Mostra o botão/menu mobile */
+  .btn-menu-mobile {
+    display: none !important;
+  }
+
+  nav.menu-mobile {
+    display: none; /* só aparece quando clicar no botão */
+  }
+
+  .topo {
+    padding: 2px 0;
+  }
+
+  .logo img {
+    width: 50px;
+  }
+
+  .logo span {
+    display: none;
+  }
+
+  .hero-text h1 {
+    font-size: 1.8rem;
+    padding: 50px 30px;
+  }
+
+  .sobre h1 {
+    font-size: 2.2rem;
+  }
+
+  .sobre h2 {
+    font-size: 1.5rem;
+  }
+
+  .sobre p {
+    font-size: 1.2rem;
+  }
+
+  .areas h1 {
+    font-size: 2.2rem;
+  }
+
+  .cta h2 {
+    font-size: 2.2rem;
+  }
+
+  .cta p {
+    font-size: 1.2rem;
+  }
+
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .rodape {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    font-size: 16px;
+  }
+
+  .copy {
+    font-size: 14px;
+  }
+}
+
 /* Smartphones */
 @media (max-width: 600px) {
   .topo {
@@ -89,6 +160,11 @@
   .rodape {
     grid-template-columns: 1fr;
     gap: 40px;
+    font-size: 16px;
+  }
+
+  .copy {
+    font-size: 14px;
   }
 
   .hero-text button,

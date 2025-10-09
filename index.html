@@ -249,21 +249,36 @@
     <script src="js/menu-mobile.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-      AOS.init({
-        duration: 500,       // duração da animação em ms
-        once: true,          // anima só uma vez (melhor no mobile)
-        offset: 80,          // reduz a distância para ativar (padrão é 120)
-    });
+      function initAOS() {
+        const isMobile = window.innerWidth <= 1000;
+        const isLandscape = isMobile && window.innerWidth > window.innerHeight;
 
-    // Garante que o AOS calcule novamente quando mudar de tamanho
-    window.addEventListener('resize', () => {
-      AOS.refresh();
-    });
+        AOS.init({
+          duration: 500,       // duração da animação em ms
+          once: true,          // anima só uma vez (melhor no mobile)
+          offset: 80,          // reduz a distância para ativar (padrão é 120)
+          disable: isLandscape // desativa só no celular deitado
+        });
+        }
 
-    // Atualiza ao terminar o carregamento (corrige bug do mobile)
-    window.addEventListener('load', () => {
-      AOS.refresh();
-    });
+        initAOS();
+
+      // Garante que o AOS calcule novamente quando mudar de tamanho
+      window.addEventListener('resize', () => {
+        initAOS();
+        AOS.refresh();
+      });
+
+      window.addEventListener('orientationchange', () => {
+        initAOS();
+        AOS.refresh();
+      });
+
+      // Atualiza ao terminar o carregamento (corrige bug do mobile)
+      window.addEventListener('load', () => {
+        initAOS();
+        AOS.refresh();
+      });
     </script>
   </body>
 </html>

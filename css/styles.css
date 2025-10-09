@@ -71,7 +71,7 @@ body {
 
 .menu-mobile ul li a {
     color: #fff;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     text-decoration: none;
     padding: 24px;
     display: block;
@@ -85,7 +85,7 @@ body {
 }
 
 .menu-mobile .bi-x-lg {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #f80101;
     padding: 24px;
 }
@@ -295,6 +295,7 @@ footer {
   grid-template-columns: repeat(3, 1fr);
   gap: 120px;
   margin-bottom: 20px;
+  font-size: 18px;
 }
 
 .rodape h3 {
@@ -318,6 +319,7 @@ footer {
 
 .copy {
   text-align: center;
+  font-size: 16px;
   padding: 10px;
   border-top: 1px solid #333;
 }
