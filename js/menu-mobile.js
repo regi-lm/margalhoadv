@@ -1,41 +1,55 @@
-
-const btnAbrirMenuMobile = document.querySelector('#btn-menu-mobile'); 
+const btnAbrirMenuMobile = document.querySelector('#btn-menu-mobile');
 const menuMobile = document.querySelector('#menu-mobile');
+const overlay = document.querySelector('.overlay');
 const body = document.body;
-
-// abrir menu
-btnAbrirMenuMobile.addEventListener('click', () => {
-    menuMobile.classList.add('abrir-menu');
-    body.classList.add('no-scroll'); // trava scroll
-});
-
-// fechar menu (clicando em qualquer parte do nav)
-menuMobile.addEventListener('click', () => {
-    menuMobile.classList.remove('abrir-menu');
-    body.classList.remove('no-scroll'); // libera scroll
-});
-
-// fechar menu clicando em links
-menuMobile.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-        menuMobile.classList.remove('abrir-menu');
-        body.classList.remove('no-scroll');
-    });
-});
-
-// fechar menu clicando no X (ícone dentro do menu)
 const btnFechar = menuMobile.querySelector('.bi-x-lg');
-if (btnFechar) {
-    btnFechar.addEventListener('click', () => {
-        menuMobile.classList.remove('abrir-menu');
-        body.classList.remove('no-scroll');
-    });
+
+// Abrir menu
+btnAbrirMenuMobile.addEventListener('click', (e) => {
+  e.stopPropagation();
+  menuMobile.classList.add('abrir-menu');
+  overlay.classList.add('ativo');
+  body.classList.add('no-scroll'); // trava scroll
+});
+
+// Fechar menu (função central)
+function fecharMenu() {
+  menuMobile.classList.remove('abrir-menu');
+  overlay.classList.remove('ativo');
+  body.classList.remove('no-scroll');
 }
 
-// ----------- EXTRA: fechar ao clicar fora do menu -----------
-document.addEventListener('click', (event) => {
-    if (!menuMobile.contains(event.target) && !btnAbrirMenuMobile.contains(event.target)) {
-        menuMobile.classList.remove('abrir-menu');
-        body.classList.remove('no-scroll');
-    }
+// Fechar menu clicando no X
+if (btnFechar) {
+  btnFechar.addEventListener('click', (e) => {
+    e.stopPropagation();
+    fecharMenu();
+  });
+}
+
+// Fechar menu clicando no overlay
+overlay.addEventListener('click', fecharMenu);
+
+// Fechar menu ao clicar em links
+menuMobile.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', fecharMenu);
+});
+
+// Impede clique interno de fechar o menu
+menuMobile.addEventListener('click', (e) => {
+  e.stopPropagation();
+});
+
+// Fechar menu clicando fora
+document.addEventListener('click', () => {
+  if (menuMobile.classList.contains('abrir-menu')) {
+    fecharMenu();
+  }
+});
+
+// Fechar com ESC
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && menuMobile.classList.contains('abrir-menu')) {
+    fecharMenu();
+  }
 });

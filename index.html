@@ -15,13 +15,16 @@
     <meta property="og:image" content="https://margalhoadv.vercel.app/images/logo.png">
     <meta property="og:image:type" content="image/png">
 
-    <title>Margalho Advocacia</title>
+    <title>Brenda Margalho | Advocacia</title>
 
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" 
     rel="stylesheet">
+
+    <!-- Font Awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <!-- Bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
@@ -41,12 +44,12 @@
     <!-- HEADER -->
     <header class="topo">
       <div class="container header-content">
-        <div class="logo" data-aos="fade-right" data-aos-delay="300">
+        <div class="logo">
           <img src="images/logo.png" alt="Logo"/>
-          <span>Margalho Advocacia</span>
+          <span></span>
         </div>
         <nav>
-          <ul class="menu" data-aos="fade-left" data-aos-delay="300">
+          <ul class="menu">
             <li><a href="#inicio">Início</a></li>
             <li><a href="#sobre">Sobre</a></li>
             <li><a href="#areas">Áreas de Atuação</a></li>
@@ -54,9 +57,12 @@
           </ul>
         </nav>
 
-        <div class="btn-menu-mobile" id="btn-menu-mobile" data-aos="fade-left" data-aos-delay="300">
+        <div class="btn-menu-mobile" id="btn-menu-mobile">
           <i class="bi bi-list"></i>
         </div>
+
+        <!-- OVERLAY DO MENU MOBILE -->
+        <div class="overlay"></div>
 
         <nav class="menu-mobile" id="menu-mobile">
           <i class="bi bi-x-lg"></i>
@@ -72,47 +78,58 @@
 
     <!-- HERO -->
     <section class="hero" id="inicio">
-      <div class="overlay"></div>
+      <div class="hero-overlay"></div>
       <div class="hero-text">
-        <h1 data-aos="zoom-in" data-aos-delay="300">
+        <h1>
           Experiência com qualidade, compromisso, respeito e transparência.
         </h1>
         <a style="text-decoration: none;" href="https://wa.me/5591992922233?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações." target="_blank">
-          <button data-aos="zoom-in" data-aos-delay="400">Falar com Advogado(a)</button>
+          <button class="btn">Falar com Advogado(a)</button>
         </a>
       </div>
     </section>
 
     <!-- SOBRE -->
-    <section class="sobre container" id="sobre">
-      <h1 data-aos="zoom-in" data-aos-delay="500">Sobre</h1>
+    <section class="sobre" id="sobre">
+      <div class="sobre-conteudo">
       <div class="texto">
-        <h2 data-aos="fade-right" data-aos-delay="500">
-          Atuamos em todo o estado do Pará,
-          Amapá, São Paulo e on-line em todo o Brasil
+        <h1>Sobre</h1><br><br>
+        <h2>
+          Atuamos em todo o País
         </h2>
-        <p data-aos="fade-right" data-aos-delay="300">
-          Atendemos questões ligadas tanto às preocupações nas áreas
-          previdenciária, civil, trabalhista, do consumidor, imobiliária e
-          autista. Temos compromisso com a ética e seriedade, buscando sempre os
-          melhores resultados para nossos clientes.
+        <p>
+          Com 8 anos de atuação sólida e comprometida com a justiça, nosso escritório jurídico se consolidou 
+          como referência nas áreas de Direito Penal, Cível e Previdenciário. Contamos com uma equipe de 
+          profissionais altamente capacitados e especializados, preparados para oferecer um atendimento técnico, 
+          humanizado e estratégico em cada demanda.
+        <p>
+          Fundado pela Dra. Brenda Margalho da Rosa, OAB/PA 28.792, o escritório carrega em sua essência a força 
+          e a visão de uma mulher determinada que se destaca na advocacia paraense. Dra. Brenda é reconhecida 
+          por sua postura firme, ética e acolhedora, especialmente em causas criminais sensíveis, nas quais atua 
+          com coragem e excelência.
+          Ao longo de quase uma década de história, seguimos firmes no propósito de transformar vidas por meio 
+          do Direito, sempre com responsabilidade, empatia e profissionalismo.
         </p>
-        <p data-aos="fade-right" data-aos-delay="300">
+        </p>
+        <p>
           Nosso principal objetivo é proporcionar orientação clara e precisa,
           com transparência e eficiência, garantindo a defesa dos seus direitos.
         </p>
       </div>
-        <a style="text-decoration: none;" href="https://wa.me/5591992922233?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações." target="_blank">
-          <button data-aos="fade-right" data-aos-delay="400">Falar com Advogado(a)</button>
-        </a>
+
+      <div class="imagem">
+      <img src="images/imagem-brenda1.JPG" alt="Imagem - Brenda Margalho">
+    </div>
+    </div>
+        
     </section>
 
     <!-- ÁREAS DE ATUAÇÃO -->
     <section class="areas" id="areas">
       <div class="container">
-        <h1 data-aos="zoom-in" data-aos-delay="300">Áreas de Atuação</h1>
+        <h1>Áreas de Atuação</h1>
         <div class="grid-3">
-          <div class="card" data-aos="fade-right" data-aos-delay="500">
+          <div class="card">
             <img
               src="images/direito-previdenciario.webp"
               alt="Direito Previdenciário"
@@ -124,161 +141,93 @@
               financeira.
             </p>
             <a style="text-decoration: none;" href="https://wa.me/5591992922233?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações%20sobre%20Direito%20Previdenciário." target="_blank">
-              <button>Falar com Advogado(a)</button>
+              <button class="btn">Falar com Advogado(a)</button>
             </a>
           </div>
 
-          <div class="card" data-aos="fade-up" data-aos-delay="500">
+          <div class="card">
             <img src="images/direito-civil.png" alt="Direito Civil" />
             <h3>Direito Civil</h3>
             <p>
-              Consultoria e assessoria na resolução de problemas jurídicos
-              civis, contratos, indenizações e obrigações legais.
+              Consultoria e assessoria jurídica em Direito Civil, com foco em contratos, 
+              indenizações, obrigações legais e soluções eficientes de conflitos extrajudiciais e judiciais.
             </p>
             <a style="text-decoration: none;" href="https://wa.me/5591992922233?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações%20sobre%20Direito%20Civil." target="_blank">
-              <button>Falar com Advogado(a)</button>
+              <button class="btn">Falar com Advogado(a)</button>
             </a>
           </div>
 
-          <div class="card" data-aos="fade-left" data-aos-delay="500">
+          <div class="card">
             <img
-              src="images/direito-trabalhista.jpeg"
+              src="images/direito-criminal.jpg"
               alt="Direito Trabalhista"
             />
-            <h3>Direito Trabalhista</h3>
+            <h3>Direito Criminal</h3>
             <p>
-              Defesa dos direitos dos trabalhadores e empregadores, atuando em
-              reclamatórias trabalhistas e negociações sindicais.
+              Atuamos na defesa criminal com estratégia, ética e dedicação, protegendo seus direitos em 
+              todas as fases do processo penal com responsabilidade e transparência.
             </p>
             <a style="text-decoration: none;" href="https://wa.me/5591992922233?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações%20sobre%20Direito%20Trabalhista." target="_blank">
-              <button>Falar com Advogado(a)</button>
+              <button class="btn">Falar com Advogado(a)</button>
             </a>
           </div>
 
-          <div class="card" data-aos="fade-right" data-aos-delay="500">
-            <img
-              src="images/direito-consumidor.webp"
-              alt="Direito do Consumidor"
-            />
-            <h3>Direito do Consumidor</h3>
-            <p>
-              Protegemos os consumidores contra abusos praticados por
-              fornecedores de produtos e serviços.
-            </p>
-            <a style="text-decoration: none;" href="https://wa.me/5591992922233?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações%20sobre%20Direito%20do%20Consumidor." target="_blank">
-              <button>Falar com Advogado(a)</button>
-            </a>
-          </div>
-
-          <div class="card" data-aos="fade-up" data-aos-delay="500">
-            <img src="images/direito-autistas.png" alt="Direito dos Autistas" />
-            <h3>Direito dos Autistas</h3>
-            <p>
-              Atuação voltada para garantir direitos de pessoas autistas e suas
-              famílias, assegurando benefícios e qualidade de vida.
-            </p>
-            <a style="text-decoration: none;" href="https://wa.me/5591992922233?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações%20sobre%20Direito%20dos%20Autistas." target="_blank">
-              <button>Falar com Advogado(a)</button>
-            </a>
-          </div>
-
-          <div class="card" data-aos="fade-left" data-aos-delay="500">
-            <img
-              src="images/direito-imobiliario.png"
-              alt="Direito Imobiliário"
-            />
-            <h3>Direito Imobiliário</h3>
-            <p>
-              Atuamos em questões de transações imobiliárias, regularização de
-              imóveis e contratos de compra e venda.
-            </p>
-            <a style="text-decoration: none;" href="https://wa.me/5591992922233?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações%20sobre%20Direito%20Imobiliário." target="_blank">
-              <button>Falar com Advogado(a)</button>
-            </a>
-          </div>
         </div>
       </div>
     </section>
 
     <!-- CTA -->
     <section class="cta">
-      <h2 data-aos="zoom-in" data-aos-delay="500">Precisando de ajuda jurídica?</h2>
-      <p data-aos="zoom-in" data-aos-delay="500">
+      <h2>Precisando de ajuda jurídica?</h2>
+      <p>
         Estamos prontos para resolver os mais diversos conflitos nas áreas do
-        direito trabalhista, previdenciário e do consumidor.
+        direito previdenciário, civil e criminal.
       </p>
       <a style="text-decoration: none;" href="https://wa.me/5591992922233?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações." target="_blank">
-        <button data-aos="zoom-in" data-aos-delay="500">Falar com Advogado(a)</button>
+        <button class="btn">Falar com Advogado(a)</button>
       </a>
     </section>
 
     <!-- RODAPÉ -->
     <footer>
       <div class="rodape container">
-        <div class="col" data-aos="fade-right" data-aos-delay="500">
-          <h3>Margalho Advocacia</h3>
+        <div class="col">
+          <h3>Brenda Margalho Adv.</h3>
           <p>
-            Advogado especializado em direito previdenciário, civil,
-            trabalhista, do consumidor e imobiliário.
+            Advogada especializada em direito previdenciário, civil 
+            e criminal.
           </p>
         </div>
-        <div class="col" data-aos="fade-up" data-aos-delay="500">
+        <div class="col">
           <h3>Navegue</h3>
           <ul>
             <li><a href="#" id="#inicio">Início</a></li>
             <li><a href="#" id="escritorio">Sobre</a></li>
             <li><a href="#" id="#areas">Áreas de Atuação</a></li>
-            <li><a href="https://wa.me/5591992922233?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações." target="_blank" id="#contato">Contato</a></li>
+            <li><a href="https://wa.me/5591993868621?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações." target="_blank" id="#contato">Contato</a></li>
           </ul>
         </div>
-        <div class="col" data-aos="fade-left" data-aos-delay="500">
+        <div class="col">
           <h3>Informações</h3>
-          <p>Telefone: (91) 99292-2233</p>
-          <p>Email: teste@teste.com</p>
-          <p>
-            Endereço: Av. Augusto Montenegro, Residencial Verano, Belém - PA
-          </p>
+          <p>Telefone: (91) 99386-8621</p>
+          <p>Email: contato@bmjuris.com.br</p><br>
+          <p>Rua da Marinha, n° 113, Marambaia, Belém/PA, CEP n° 66620-200</p>
+        </div>
+        <div class="col">
+          <h3>Redes sociais</h3>
+            <a href="https://www.instagram.com/bmadvocacia1/" target="_blank" class="instagram-link">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
         </div>
       </div>
       <div class="copy">
-        Copyright © 2025 - Margalho Advocacia.<br />Desenvolvido por <span>Regi Lima.</span>
+        Copyright © 2025 - Brenda Margalho Adv.<br />Desenvolvido por <span>Regi Lima.</span>
       </div>
     </footer>
 
     <script src="js/menu-scroll.js"></script>
     <script src="js/menu-mobile.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      function initAOS() {
-        const isMobile = window.innerWidth <= 1000;
-        const isLandscape = isMobile && window.innerWidth > window.innerHeight;
-
-        AOS.init({
-          duration: 500,       // duração da animação em ms
-          once: true,          // anima só uma vez (melhor no mobile)
-          offset: 80,          // reduz a distância para ativar (padrão é 120)
-          disable: isLandscape // desativa só no celular deitado
-        });
-        }
-
-        initAOS();
-
-      // Garante que o AOS calcule novamente quando mudar de tamanho
-      window.addEventListener('resize', () => {
-        initAOS();
-        AOS.refresh();
-      });
-
-      window.addEventListener('orientationchange', () => {
-        initAOS();
-        AOS.refresh();
-      });
-
-      // Atualiza ao terminar o carregamento (corrige bug do mobile)
-      window.addEventListener('load', () => {
-        initAOS();
-        AOS.refresh();
-      });
-    </script>
+    
   </body>
 </html>

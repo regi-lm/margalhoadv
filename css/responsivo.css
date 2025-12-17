@@ -113,15 +113,19 @@
   }
 
   #sobre {
-    scroll-margin-top: 80px;
+    scroll-margin-top: 10px;
   }
 
   .logo img {
-    width: 50px;
+    width: 180px;
   }
 
   .logo span {
     display: none;
+  }
+
+  .hero {
+    height: 550px;
   }
 
   .hero-text h1 {
@@ -129,18 +133,38 @@
     padding: 50px 30px;
   }
 
-  .sobre h1 {
-    font-size: 2.2rem;
-  }
+  /* SOBRE */
+.sobre-conteudo {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+}
 
-  .sobre h2 {
-    font-size: 1.5rem;
-  }
+.sobre p {
+  font-size: 22px;
+  text-align: justify;
+  text-indent: 30px;
+  padding: 0 10px;
+}
 
-  .sobre p {
-    font-size: 1.2rem;
-  }
+.imagem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+}
 
+.imagem img {
+  width: 100%;          /* garante responsividade */
+  max-width: 350px;     /* controla tamanho no mobile */
+  height: auto;
+  margin: 0 auto;       /* força centralização */
+  display: block;
+  border-radius: 8px;   /* opcional */
+}
+
+  /* AREAS */
   .areas h1 {
     font-size: 2.2rem;
   }
