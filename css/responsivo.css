@@ -168,7 +168,7 @@
 }
 
 .imagem img {
-  width: 100%;          /* garante responsividade */
+  width: 85%;          /* garante responsividade */
   max-width: 350px;     /* controla tamanho no mobile */
   height: auto;
   margin: 0 auto;       /* força centralização */
