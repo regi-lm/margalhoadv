@@ -91,7 +91,7 @@
 }
 
 /* Smartphones */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .topo {
     padding: 2px 0;
   }
@@ -117,7 +117,7 @@
   }
 
   .logo img {
-    width: 180px;
+    width: 150px;
   }
 
   .logo span {
