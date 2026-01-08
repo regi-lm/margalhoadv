@@ -1,0 +1,136 @@
+
+/* HEADER */
+.topo {
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  color: #fff;
+  padding: 10px 0;
+  transition: background 0.5s;
+}
+
+.topo.scrolled {
+  background-image: none;
+  background-color: var(--primaria);
+}
+
+/* Estilo do menu mobile */
+.btn-menu-mobile {
+  display: none;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #fff;
+}
+
+.btn-menu-mobile i {
+  font-size: 2.8rem;
+  color: #fff;
+}
+
+.menu-mobile {
+  position: fixed;
+  top: 0;
+  right: 0%;
+  width: 50%;
+  height: 80vh;
+  background-color: var(--creme);
+  text-align: right;
+  padding: 32px 0;
+  border-radius: 120px 0 0 120px;
+  pointer-events: none;
+  transition: 0.5s;
+  z-index: 1000;
+
+  transform: translateX(100%);
+}
+
+.menu-mobile ul {
+  list-style: none;
+  padding: 64px 0;
+}
+
+.menu-mobile ul li a {
+  color: var(--primaria);
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 24px;
+  display: block;
+  transition: 0.3s;
+}
+
+.menu-mobile ul li a:hover {
+  text-decoration: none;
+  color: var(--marromEscuro);
+  font-weight: bold;
+}
+
+.menu-mobile .bi-x-lg {
+  font-size: 1.5rem;
+  color: var(--primaria);
+  padding: 24px;
+}
+
+.menu-mobile.abrir-menu {
+  transform: translateX(0);
+  pointer-events: auto;
+}
+
+.no-scroll {
+  overflow: hidden;
+  height: 100vh; /* impede rolagem no mobile */
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7); /* 70% */
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 900;
+}
+
+.overlay.ativo {
+  opacity: 1;
+  pointer-events: auto; /* BLOQUEIA tudo */
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 220px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  font-size: 18px;
+  flex-wrap: wrap;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.4s ease;
+}
+
+.menu li a:hover {
+  color: var(--creme);
+}

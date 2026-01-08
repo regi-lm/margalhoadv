@@ -1,0 +1,84 @@
+
+/* ÁREAS */
+.areas {
+  background: #132126;
+  background: linear-gradient(
+    180deg,
+    rgba(19, 33, 38, 1) 35%,
+    rgba(217, 170, 113, 1) 90%
+  );
+  padding: 120px 0;
+  color: var(--primaria);
+}
+
+.areas h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+}
+
+.card {
+  background: var(--marromClaro);
+  border: 3px solid var(--creme);
+  padding: 20px;
+  text-align: center;
+  border-radius: 30px 12px;
+  position: relative;
+
+  transition: box-shadow 0.4s ease, transform 0.4s ease;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.719);
+}
+
+.card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.719);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border-radius: 6px;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  font-size: 28px;
+  color: #fff;
+}
+
+.card p {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.card .btn {
+  background: var(--primaria);
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 700;
+  border: none;
+  font-size: 18px;
+  transition: all 0.4s ease;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.card .btn:hover {
+  background: var(--creme);
+  color: var(--primaria);
+  font-weight: 700;
+}

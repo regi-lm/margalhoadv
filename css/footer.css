@@ -1,0 +1,61 @@
+
+/* RODAPÉ */
+footer {
+  background: var(--secundaria);
+  color: var(--primaria);
+  font-weight: 600;
+  padding: 40px 20px 20px;
+}
+
+.rodape {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 72px;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.rodape h3 {
+  color: var(--primaria);
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.rodape ul {
+  list-style: none;
+}
+
+.rodape a {
+  color: var(--primaria);
+  font-weight: 600;
+  text-decoration: none;
+  list-style: none;
+  transition: all 0.4s ease;
+}
+
+.rodape a:hover {
+  color: var(--creme);
+}
+
+.rodape i {
+  font-size: 38px;
+  transition: all 0.4s ease;
+}
+
+.copy {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px;
+  border-top: 1px solid #333;
+}
+
+.copy span {
+  cursor: pointer;
+  text-decoration: none;
+  list-style: none;
+}
+
+.copy span:hover {
+  color: var(--creme);
+}
