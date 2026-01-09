@@ -62,11 +62,11 @@
   color: #fff;
 }
 
-.card .btn {
-  background: var(--primaria);
-  color: #fff;
-  padding: 12px 24px;
-  border-radius: 5px;
+.card .btn-info {
+  background: #cacaca;
+  color: var(--textColor);
+  padding: 12px 47px;
+  border-radius: 15px;
   text-decoration: none;
   font-weight: 700;
   border: none;
@@ -77,8 +77,33 @@
   cursor: pointer;
 }
 
-.card .btn:hover {
-  background: var(--creme);
-  color: var(--primaria);
+.card .btn-info:hover {
+  background: #5f5f5f;
+  color: #fff;
+  font-weight: 700;
+}
+
+.card a {
+  padding: 10px;
+}
+
+.card .btn-whats {
+  background: var(--btnWhats);
+  color: var(--textColor);
+  padding: 12px 24px;
+  border-radius: 15px;
+  text-decoration: none;
+  font-weight: 700;
+  border: none;
+  font-size: 18px;
+  transition: all 0.4s ease;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.card .btn-whats:hover {
+  background: #156d37;
+  color: #fff;
   font-weight: 700;
 }

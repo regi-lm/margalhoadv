@@ -1,18 +1,28 @@
 
 /* HEADER */
 .topo {
-  background-color: transparent;
   position: fixed;
-  width: 100%;
-  z-index: 1;
+  top: 10px;
+  left: 5%;
+  width: 90%;
+  border-radius: 120px;
+  background-color: transparent;
   color: #fff;
   padding: 10px 0;
+  z-index: 1;
   transition: background 0.5s;
 }
 
 .topo.scrolled {
   background-image: none;
   background-color: var(--primaria);
+  box-shadow: 0 0 15px var(--creme);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 10px var(--creme); }
+  50% { box-shadow: 0 0 30px var(--creme); }
 }
 
 /* Estilo do menu mobile */
@@ -33,7 +43,7 @@
   top: 0;
   right: 0%;
   width: 50%;
-  height: 70vh;
+  height: 80vh;
   background-color: var(--primaria);
   text-align: right;
   padding: 32px 0;

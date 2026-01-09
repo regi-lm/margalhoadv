@@ -1,4 +1,3 @@
-
 /* ====== RESPONSIVIDADE ====== */
 
 /* Tablets
@@ -94,6 +93,8 @@
 @media (max-width: 768px) {
   .topo {
     padding: 2px 0;
+    left: 2.5%;
+    width: 95%;
   }
 
   .header-content {
@@ -138,43 +139,43 @@
   }
 
   /* SOBRE */
-.sobre-conteudo {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  padding: 20px;
-}
+  .sobre-conteudo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
 
-.sobre h1 {
-  font-size: 1.8rem;
-}
+  .sobre h1 {
+    font-size: 1.8rem;
+  }
 
-.sobre h2 {
-  font-size: 1.6rem;
-}
+  .sobre h2 {
+    font-size: 1.6rem;
+  }
 
-.sobre p {
-  font-size: 1.2rem;
-  text-align: justify;
-  text-indent: 30px;
-  padding: 0 10px;
-}
+  .sobre p {
+    font-size: 1.2rem;
+    text-align: justify;
+    text-indent: 30px;
+    padding: 0 10px;
+  }
 
-.imagem {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 24px;
-}
+  .imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+  }
 
-.imagem img {
-  width: 85%;          /* garante responsividade */
-  max-width: 350px;     /* controla tamanho no mobile */
-  height: auto;
-  margin: 0 auto;       /* força centralização */
-  display: block;
-  border-radius: 8px;   /* opcional */
-}
+  .imagem img {
+    width: 85%; /* garante responsividade */
+    max-width: 350px; /* controla tamanho no mobile */
+    height: auto;
+    margin: 0 auto; /* força centralização */
+    display: block;
+    border-radius: 8px; /* opcional */
+  }
 
   /* AREAS */
   .areas h1 {
@@ -182,12 +183,21 @@
   }
 
   .card h3 {
-  font-size: 1.5rem;
-}
+    font-size: 1.5rem;
+  }
 
-.card p {
-  font-size: 1.2rem;
-}
+  .card p {
+    font-size: 1.2rem;
+  }
+
+  /* FAQ */
+  .faq-question {
+    padding: 16px;
+  }
+
+  .faq-item.active .faq-answer {
+    max-height: 350px;
+  }
 
   /* CTA */
   .cta h2 {
