@@ -192,7 +192,8 @@
 
   /* FAQ */
   .faq-question {
-    padding: 16px;
+    padding: 16px 20px;
+    font-size: 18px;
   }
 
   .faq-item.active .faq-answer {

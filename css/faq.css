@@ -13,24 +13,30 @@
 }
 
 .faq-item {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto 24px;
   border-radius: 8px;
   background: var(--marromClaro);
   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.37);
 }
 
+.faq-toggle {
+  color: var(--creme);
+}
+
 .faq-question {
   width: 100%;
   padding: 16px 24px;
+
   font-size: 20px;
   font-weight: bold;
   color: #fff;
+  text-align: left;
+
   background: var(--primaria);
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  text-align: left;
   display: flex;
   justify-content: space-between;
   align-items: center;
