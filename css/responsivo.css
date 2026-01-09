@@ -130,12 +130,14 @@
   }
 
   .hero-text h1 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     padding: 50px 30px;
   }
 
   .hero .btn {
     margin-bottom: 40px;
+    font-size: 15px;
+    font-weight: bold;
   }
 
   /* SOBRE */
@@ -147,15 +149,15 @@
   }
 
   .sobre h1 {
-    font-size: 1.8rem;
-  }
-
-  .sobre h2 {
     font-size: 1.6rem;
   }
 
+  .sobre h2 {
+    font-size: 1.4rem;
+  }
+
   .sobre p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     text-align: justify;
     text-indent: 30px;
     padding: 0 10px;
@@ -179,40 +181,54 @@
 
   /* AREAS */
   .areas h1 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 
   .card h3 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 
   .card p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+  }
+
+  .card .btn-info,
+  .card .btn-whats {
+    font-size: 16px;
   }
 
   /* FAQ */
+  .faq-title {
+    font-size: 2rem;
+  }
+
   .faq-question {
     padding: 16px 20px;
     font-size: 18px;
   }
 
   .faq-item.active .faq-answer {
-    max-height: 350px;
+    max-height: 400px;
   }
 
   /* CTA */
   .cta h2 {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 
   .cta p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+  }
+
+  .cta.cta .btn {
+    font-size: 15px;
   }
 
   .grid-3 {
     grid-template-columns: 1fr;
   }
 
+  /* FOOTER */
   .rodape {
     grid-template-columns: 1fr;
     gap: 40px;
