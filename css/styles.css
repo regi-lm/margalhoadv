@@ -24,6 +24,7 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, sans-serif;
   line-height: 1.6;
   color: var(--textColor);
+  background-color: var(--primaria);
 }
 
 .container {
@@ -36,7 +37,11 @@ body {
 /* BOTÃO DE CONTATO */
 .btn {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  
   background: var(--creme);
   color: var(--primaria);
   padding: 12px 24px;

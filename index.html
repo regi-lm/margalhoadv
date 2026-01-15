@@ -38,6 +38,7 @@
     <link rel="stylesheet" href="css/hero.css" />
     <link rel="stylesheet" href="css/sobre.css" />
     <link rel="stylesheet" href="css/areas.css" />
+    <link rel="stylesheet" href="css/maisinfo.css" />
     <link rel="stylesheet" href="css/faq.css" />
     <link rel="stylesheet" href="css/cta.css" />
     <link rel="stylesheet" href="css/footer.css" />
@@ -93,7 +94,7 @@
           Experiência com qualidade, compromisso, respeito e transparência.
         </h1>
         <a style="text-decoration: none;" href="https://wa.me/5591993868621?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações." target="_blank">
-          <button class="btn">Falar com Advogado(a)</button>
+          <button class="btn">Falar com Advogado(a) <i class="bi bi-whatsapp"></i></button>
         </a>
       </div>
     </section>
@@ -149,9 +150,9 @@
               Atuamos na defesa criminal com estratégia, ética e dedicação, protegendo seus direitos em 
               todas as fases do processo penal com responsabilidade e transparência.
             </p>
-            <button class="btn-info">Mais informações</button>
+            <button class="btn-info">Mais informações <i class="bi bi-info-circle-fill"></i></i></button>
             <a style="text-decoration: none;" href="https://wa.me/5591993868621?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações%20sobre%20Direito%20Criminal." target="_blank">
-              <button class="btn-whats">Falar com Advogado(a)</button>
+              <button class="btn-whats">Falar com Advogado(a) <i class="bi bi-whatsapp"></i></button>
             </a>
           </div>
           
@@ -162,9 +163,9 @@
               Consultoria e assessoria jurídica em Direito Civil, com foco em contratos, 
               indenizações, obrigações legais e soluções eficientes de conflitos extrajudiciais e judiciais.
             </p>
-            <button class="btn-info">Mais informações</button>
+            <button class="btn-info">Mais informações <i class="bi bi-info-circle-fill"></i></i></button>
             <a style="text-decoration: none;" href="https://wa.me/5591993868621?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações%20sobre%20Direito%20Criminal." target="_blank">
-              <button class="btn-whats">Falar com Advogado(a)</button>
+              <button class="btn-whats">Falar com Advogado(a) <i class="bi bi-whatsapp"></i></button>
             </a>
           </div>
           
@@ -180,15 +181,48 @@
               auxílios e revisões, assegurando o melhor resultado para sua vida
               financeira.
             </p>
-            <button class="btn-info">Mais informações</button>
+            <button class="btn-info">Mais informações <i class="bi bi-info-circle-fill"></i></i></button>
             <a style="text-decoration: none;" href="https://wa.me/5591993868621?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações%20sobre%20Direito%20Criminal." target="_blank">
-              <button class="btn-whats">Falar com Advogado(a)</button>
+              <button class="btn-whats">Falar com Advogado(a) <i class="bi bi-whatsapp"></i></button>
             </a>
           </div>
 
         </div>
       </div>
     </section>
+
+    <!-- TELA DE MAIS INFORMAÇÕES -->
+    <div class="info-overlay" id="infoOverlay">
+
+      <!-- CONTAINER DOS CARDS -->
+      <div class="info-container">
+
+        <!-- BOTÃO VOLTAR FIXO -->
+        <button class="btn-voltar" id="btnVoltar">
+          <i class="bi bi-box-arrow-left"></i> Voltar ao site
+        </button>
+        
+        <!-- CARD -->
+        <div class="info-card" id="infoCard">
+          <img id="infoImg" src="" alt="">
+          <h2 id="infoTitle"></h2>
+          <p id="infoText1"></p>
+          <p id="infoText2"></p>
+          <p id="infoText3"></p>
+          <p id="infoText4"></p>
+          <p id="infoText5"></p>
+          <br><br>
+          <a style="text-decoration: none;" href="https://wa.me/5591993868621?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações." target="_blank">
+            <button class="btn">Falar com Advogado(a) <i class="bi bi-whatsapp"></i></button>
+          </a>
+        </div>
+
+        <!-- BOTÕES DE NAVEGAÇÃO -->
+          <button id="btnAnterior" class="btn-nav anterior"><i class="bi bi-caret-left-fill"></i></i></button>
+          <button id="btnProximo" class="btn-nav proximo"><i class="bi bi-caret-right-fill"></i></i></button>
+
+      </div>
+    </div>
 
     <!-- FAQs -->
     <section class="faq" id="faq">
@@ -257,7 +291,7 @@
         direito previdenciário, civil e criminal.
       </p>
       <a style="text-decoration: none;" href="https://wa.me/5591993868621?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações." target="_blank">
-        <button class="btn">Falar com Advogado(a)</button>
+        <button class="btn">Falar com Advogado(a) <i class="bi bi-whatsapp"></i></button>
       </a>
     </section>
 
@@ -267,8 +301,8 @@
         <div class="col">
           <h3>Brenda Margalho Adv.</h3>
           <p>
-            Advogada especializada em direito previdenciário, civil 
-            e criminal.
+            Advogada especializada em direito criminal, civil 
+            e previdenciário.
           </p>
         </div>
         <div class="col">
@@ -295,10 +329,11 @@
         </div>
       </div>
       <div class="copy">
-        Copyright © 2025 - Brenda Margalho Adv.<br />Desenvolvido por <span>Regi Lima.</span>
+        Copyright © 2026 - Brenda Margalho Adv.<br />Desenvolvido por <span>Regi Lima.</span>
       </div>
     </footer>
 
+    <script src="js/maisinfo.js"></script>
     <script src="js/faq.js"></script>
     <script src="js/menu-scroll.js"></script>
     <script src="js/menu-mobile.js"></script>

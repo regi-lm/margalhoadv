@@ -1,0 +1,214 @@
+/* ============================= */
+/* MODO INFO ATIVO */
+/* ============================= */
+
+/* Remove todas as sections do site */
+body.modo-info section {
+  display: none !important;
+}
+
+/* Mantém apenas header, info e footer */
+body.modo-info header,
+body.modo-info .info-overlay,
+body.modo-info footer {
+  display: block;
+}
+
+/* Scroll único */
+body.modo-info {
+  overflow-y: auto;
+  background: #132126;
+}
+
+/* ============================= */
+/* NOVA TELA */
+/* ============================= */
+
+.info-overlay {
+  display: none;
+  position: relative;
+  margin-top: 150px;
+  min-height: calc(100vh - 150px);
+  padding: 40px 20px 80px;
+
+  background: linear-gradient(
+    180deg,
+    rgba(19, 33, 38, 1) 5%,
+    rgba(217, 170, 113, 1) 50%,
+    rgba(140, 140, 140, 1) 95%
+  );
+
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+body.modo-info .info-overlay {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ============================= */
+/* CONTAINER */
+/* ============================= */
+
+.info-container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ============================= */
+/* BOTÃO VOLTAR */
+/* ============================= */
+
+.btn-voltar {
+  max-width: 150px;
+  width: 100%;
+  align-self: flex-start;
+  margin: 0 0 16px 100px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+
+  background: var(--creme);
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+
+  color: var(--marromEscuro);
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn-voltar i {
+  font-weight: bold;
+}
+
+.btn-voltar:hover {
+  color: #fff;
+  background: var(--marromClaro);
+}
+
+/* ============================= */
+/* CARD */
+/* ============================= */
+
+.info-card {
+  background: #fff;
+  max-width: 1000px;
+  width: 100%;
+  border-radius: 16px;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  
+
+  animation: slideUp 0.4s ease;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.info-card img {
+  width: 90%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.info-card h2 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.info-card p {
+  font-size: 18px;
+  text-align: left;
+  padding: 0 50px;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.info-card .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* centraliza horizontalmente */
+  gap: 10px;               /* espaço entre texto e ícone */
+
+  margin: 32px auto 0;     /* centralizado no card */
+  padding: 14px 32px;
+
+  background: #20bb59;     /* verde WhatsApp */
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.info-card .btn i {
+  font-size: 20px;
+}
+
+/* Hover */
+.info-card .btn:hover {
+  background: #116d36;
+  color: #fff;
+}
+/* ============================= */
+/* NAVEGAÇÃO */
+/* ============================= */
+
+
+.btn-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  padding: 40px 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 35px;
+  border-radius: 12px;
+  z-index: 10;
+}
+
+/* Anterior */
+.btn-nav.anterior {
+  left: -20px; /* afasta do card */
+  background: #ccc;
+}
+
+/* Próximo */
+.btn-nav.proximo {
+  right: -20px; /* afasta do card */
+  background: var(--marromEscuro);
+  color: #fff;
+}
+
+.hidden {
+  display: none;
+}

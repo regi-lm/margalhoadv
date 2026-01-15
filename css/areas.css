@@ -66,6 +66,7 @@
   background: #cacaca;
   color: var(--textColor);
   padding: 12px 47px;
+  gap: 10px;
   border-radius: 15px;
   text-decoration: none;
   font-weight: 700;
@@ -106,4 +107,8 @@
   background: #156d37;
   color: #fff;
   font-weight: 700;
+}
+
+.card .btn-whats i {
+  color: #fff;
 }

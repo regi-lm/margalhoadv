@@ -1,23 +1,5 @@
 /* ====== RESPONSIVIDADE ====== */
 
-/* Tablets
-@media (max-width: 1000px) {
-  .header-content {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .menu {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-  }
-
-  .grid-3 {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}*/
-
 /* Quando o celular estiver em landscape (deitado) */
 @media screen and (max-width: 1000px) and (orientation: landscape) {
   .menu {
@@ -195,6 +177,32 @@
   .card .btn-info,
   .card .btn-whats {
     font-size: 16px;
+  }
+
+  /* MAIS INFORMAÇÕES */
+  .info-card {
+    touch-action: pan-y;
+  }
+
+  .info-card img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .info-card h2 {
+    font-size: 26px;
+  }
+
+  .info-card p {
+    font-size: 18px;
+    text-align: justify;
+    padding: 0 15px;
+    margin-bottom: 10px;
+    line-height: 1.6;
+  }
+
+  .btn-nav {
+    display: none;
   }
 
   /* FAQ */
